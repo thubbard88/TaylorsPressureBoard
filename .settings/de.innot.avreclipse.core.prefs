@@ -1,0 +1,9 @@
+#Tue Feb 01 19:03:21 PST 2011
+avrtarget/ClockFrequency=10000000
+avrtarget/ExtRAMSize=0
+avrtarget/ExtendedRAM=false
+avrtarget/MCUType=atmega324p
+avrtarget/UseEEPROM=false
+avrtarget/UseExtendedRAMforHeap=true
+avrtarget/perConfig=false
+eclipse.preferences.version=1

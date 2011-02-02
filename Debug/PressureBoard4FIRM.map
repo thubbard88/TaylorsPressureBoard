@@ -1,0 +1,579 @@
+Archive member included because of file (symbol)
+
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_divmodhi4.o)
+                              ./SPI.o (__divmodhi4)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o (exit)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_copy_data.o)
+                              ./Buzzer.o (__do_copy_data)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_clear_bss.o)
+                              ./Buzzer.o (__do_clear_bss)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_udivmodhi4.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_divmodhi4.o) (__udivmodhi4)
+<<<<<<< HEAD
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+                              ./Comms.o (malloc)
+=======
+>>>>>>> 43d7a417581efd0dd9c12782e7b7dfc31417faf9
+
+Allocating common symbols
+Common symbol       size              file
+
+Transmit_Packet     0x7               ./SeniorDesign2Board.o
+Data_Packet         0x4f              ./SeniorDesign2Board.o
+<<<<<<< HEAD
+__brkval            0x2               /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+__flp               0x2               /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+=======
+>>>>>>> 43d7a417581efd0dd9c12782e7b7dfc31417faf9
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+LOAD ./Buzzer.o
+LOAD ./Comms.o
+LOAD ./SPI.o
+LOAD ./SeniorDesign2Board.o
+LOAD ./uart.o
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+<<<<<<< HEAD
+.text           0x00000000      0x978
+=======
+.text           0x00000000      0x586
+>>>>>>> 43d7a417581efd0dd9c12782e7b7dfc31417faf9
+ *(.vectors)
+ .vectors       0x00000000       0x7c /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x0000007c        0x6 ./SPI.o
+                0x0000007c                ADC_MODES
+                0x00000082                . = ALIGN (0x2)
+                0x00000082                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000082        0x0 linker stubs
+ *(.trampolines*)
+                0x00000082                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000082                __ctors_start = .
+ *(.ctors)
+                0x00000082                __ctors_end = .
+                0x00000082                __dtors_start = .
+ *(.dtors)
+                0x00000082                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000082        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+                0x00000082                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000082        0xc /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000008e       0x16 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_copy_data.o)
+                0x0000008e                __do_copy_data
+ .init4         0x000000a4       0x10 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_clear_bss.o)
+                0x000000a4                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000b4        0x8 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000bc        0x4 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+                0x000000bc                __vector_22
+                0x000000bc                __vector_28
+                0x000000bc                __vector_1
+                0x000000bc                __vector_24
+                0x000000bc                __vector_12
+                0x000000bc                __bad_interrupt
+                0x000000bc                __vector_6
+                0x000000bc                __vector_3
+                0x000000bc                __vector_23
+                0x000000bc                __vector_30
+                0x000000bc                __vector_25
+                0x000000bc                __vector_11
+                0x000000bc                __vector_13
+                0x000000bc                __vector_17
+                0x000000bc                __vector_19
+                0x000000bc                __vector_7
+                0x000000bc                __vector_27
+                0x000000bc                __vector_5
+                0x000000bc                __vector_4
+                0x000000bc                __vector_9
+                0x000000bc                __vector_2
+                0x000000bc                __vector_15
+                0x000000bc                __vector_29
+                0x000000bc                __vector_8
+                0x000000bc                __vector_26
+                0x000000bc                __vector_14
+                0x000000bc                __vector_10
+                0x000000bc                __vector_18
+<<<<<<< HEAD
+=======
+                0x000000bc                __vector_20
+>>>>>>> 43d7a417581efd0dd9c12782e7b7dfc31417faf9
+ .text          0x000000c0       0xc2 ./Buzzer.o
+                0x000000e2                BUZZER_SETUP
+                0x000000f8                __vector_16
+                0x000000c0                BUZZZ_DURATION
+<<<<<<< HEAD
+ .text          0x00000182      0x276 ./Comms.o
+                0x00000182                WriteData
+                0x000002ec                ClearCommandBuffer
+                0x00000206                INIT_RADIO
+                0x00000282                __vector_21
+                0x0000038a                CheckCommand
+                0x00000306                __vector_20
+ .text          0x000003f8      0x21a ./SPI.o
+                0x000005ee                TestADC
+                0x000003f8                transfer
+                0x000004ec                SetFilters
+                0x00000452                READADC_DATA
+                0x00000500                RESET_SPI
+                0x00000406                PrintMode
+                0x000004bc                ReadADC
+                0x00000550                SelfCalibrate
+                0x000004da                InitSPI
+                0x0000041a                SETADC_MODE
+                0x00000526                WaitForRDY
+                0x00000514                PrintStatus
+ .text          0x00000612      0x124 ./SeniorDesign2Board.o
+                0x000006bc                SETUP
+                0x00000612                TestDataBuffer
+                0x00000708                main
+ .text          0x00000736        0x0 ./uart.o
+ .text          0x00000736        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x00000736        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+ .text          0x00000736        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000736        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000736        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x00000736        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x00000736                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000736       0x26 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_divmodhi4.o)
+                0x00000736                __divmodhi4
+                0x00000736                _div
+ .text.libgcc   0x0000075c        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000075c        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000075c        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000075c       0x28 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000075c                __udivmodhi4
+ .text.avr-libc
+                0x00000784      0x1f2 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x00000784                malloc
+                0x000008be                free
+                0x00000976                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000976        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+                0x00000976                exit
+                0x00000976                _exit
+=======
+ .text          0x00000182      0x13a ./Comms.o
+                0x00000182                WriteData
+                0x00000206                INIT_RADIO
+                0x00000252                __vector_21
+ .text          0x000002bc      0x21a ./SPI.o
+                0x000004b2                TestADC
+                0x000002bc                transfer
+                0x000003b0                SetFilters
+                0x00000316                READADC_DATA
+                0x000003c4                RESET_SPI
+                0x000002ca                PrintMode
+                0x00000380                ReadADC
+                0x00000414                SelfCalibrate
+                0x0000039e                InitSPI
+                0x000002de                SETADC_MODE
+                0x000003ea                WaitForRDY
+                0x000003d8                PrintStatus
+ .text          0x000004d6       0x60 ./SeniorDesign2Board.o
+                0x000004d6                SETUP
+                0x0000051e                main
+ .text          0x00000536        0x0 ./uart.o
+ .text          0x00000536        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x00000536        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+ .text          0x00000536        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000536        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000536        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_udivmodhi4.o)
+                0x00000536                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000536       0x26 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_divmodhi4.o)
+                0x00000536                __divmodhi4
+                0x00000536                _div
+ .text.libgcc   0x0000055c        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000055c        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000055c        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000055c       0x28 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000055c                __udivmodhi4
+                0x00000584                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000584        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+                0x00000584                exit
+                0x00000584                _exit
+>>>>>>> 43d7a417581efd0dd9c12782e7b7dfc31417faf9
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+<<<<<<< HEAD
+ .fini0         0x00000976        0x2 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000978                _etext = .
+
+.data           0x00800100       0x18 load address 0x00000978
+=======
+ .fini0         0x00000584        0x2 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000586                _etext = .
+
+.data           0x00800100       0x12 load address 0x00000586
+>>>>>>> 43d7a417581efd0dd9c12782e7b7dfc31417faf9
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+ .data          0x00800100        0x0 ./Buzzer.o
+ .data          0x00800100       0x11 ./Comms.o
+ .data          0x00800111        0x0 ./SPI.o
+ .data          0x00800111        0x0 ./SeniorDesign2Board.o
+ .data          0x00800111        0x0 ./uart.o
+ .data          0x00800111        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x00800111        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+ .data          0x00800111        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_copy_data.o)
+ .data          0x00800111        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00800111        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_udivmodhi4.o)
+<<<<<<< HEAD
+ .data          0x00800111        0x6 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x00800113                __malloc_heap_start
+                0x00800111                __malloc_heap_end
+                0x00800115                __malloc_margin
+=======
+>>>>>>> 43d7a417581efd0dd9c12782e7b7dfc31417faf9
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+<<<<<<< HEAD
+                0x00800118                . = ALIGN (0x2)
+ *fill*         0x00800117        0x1 00
+                0x00800118                _edata = .
+                0x00800118                PROVIDE (__data_end, .)
+
+.bss            0x00800118       0x6f
+                0x00800118                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800118        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+ .bss           0x00800118        0x5 ./Buzzer.o
+ .bss           0x0080011d        0x9 ./Comms.o
+ .bss           0x00800126        0x7 ./SPI.o
+ .bss           0x0080012d        0x0 ./SeniorDesign2Board.o
+ .bss           0x0080012d        0x0 ./uart.o
+ .bss           0x0080012d        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x0080012d        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+ .bss           0x0080012d        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0080012d        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x0080012d        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x0080012d        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0080012d       0x56 ./SeniorDesign2Board.o
+                0x0080012d                Transmit_Packet
+                0x00800134                Data_Packet
+ COMMON         0x00800183        0x4 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+                0x00800183                __brkval
+                0x00800185                __flp
+                0x00800187                PROVIDE (__bss_end, .)
+                0x00000978                __data_load_start = LOADADDR (.data)
+                0x00000990                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800187        0x0
+                0x00800187                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800187                PROVIDE (__noinit_end, .)
+                0x00800187                _end = .
+                0x00800187                PROVIDE (__heap_start, .)
+=======
+                0x00800112                . = ALIGN (0x2)
+ *fill*         0x00800111        0x1 00
+                0x00800112                _edata = .
+                0x00800112                PROVIDE (__data_end, .)
+
+.bss            0x00800112       0x62
+                0x00800112                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800112        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+ .bss           0x00800112        0x5 ./Buzzer.o
+ .bss           0x00800117        0x0 ./Comms.o
+ .bss           0x00800117        0x7 ./SPI.o
+ .bss           0x0080011e        0x0 ./SeniorDesign2Board.o
+ .bss           0x0080011e        0x0 ./uart.o
+ .bss           0x0080011e        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x0080011e        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_exit.o)
+ .bss           0x0080011e        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0080011e        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x0080011e        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/avr5/libgcc.a(_udivmodhi4.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0080011e       0x56 ./SeniorDesign2Board.o
+                0x0080011e                Transmit_Packet
+                0x00800125                Data_Packet
+                0x00800174                PROVIDE (__bss_end, .)
+                0x00000586                __data_load_start = LOADADDR (.data)
+                0x00000598                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800174        0x0
+                0x00800174                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800174                PROVIDE (__noinit_end, .)
+                0x00800174                _end = .
+                0x00800174                PROVIDE (__heap_start, .)
+>>>>>>> 43d7a417581efd0dd9c12782e7b7dfc31417faf9
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0x6b4
+ *(.stab)
+ .stab          0x00000000      0x6b4 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+
+.stabstr        0x00000000       0x82
+ *(.stabstr)
+ .stabstr       0x00000000       0x82 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/crtm324p.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+<<<<<<< HEAD
+.debug_aranges  0x00000000       0x1c
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x1c /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+
+.debug_pubnames
+                0x00000000       0x7f
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x7f /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+
+.debug_info     0x00000000      0x218
+ *(.debug_info)
+ .debug_info    0x00000000      0x218 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000       0xfa
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xfa /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+
+.debug_line     0x00000000      0x276
+ *(.debug_line)
+ .debug_line    0x00000000      0x276 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+=======
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+>>>>>>> 43d7a417581efd0dd9c12782e7b7dfc31417faf9
+
+.debug_frame
+ *(.debug_frame)
+
+<<<<<<< HEAD
+.debug_str      0x00000000      0x14c
+ *(.debug_str)
+ .debug_str     0x00000000      0x14c /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/3.4.6/../../../../avr/lib/avr5/libc.a(malloc.o)
+                                0x185 (size before relaxing)
+=======
+.debug_str
+ *(.debug_str)
+>>>>>>> 43d7a417581efd0dd9c12782e7b7dfc31417faf9
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(PressureBoard4FIRM.elf elf32-avr)
+LOAD linker stubs
